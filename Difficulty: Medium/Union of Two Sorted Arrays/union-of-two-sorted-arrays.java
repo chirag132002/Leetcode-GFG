@@ -52,9 +52,8 @@ class Main
 class Solution
 {
     //Function to return a list containing the union of the two arrays.
-    public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m)
-    {
- int i = 0, j = 0; // pointers
+    public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m){
+    int i = 0, j = 0; // pointers
   ArrayList<Integer > Union=new ArrayList<>(); // Uninon vector
   while (i < n && j < m) {
     if (arr1[i] <= arr2[j]) // Case 1 and 2
@@ -82,7 +81,7 @@ class Solution
     j++;
   }
   return Union;
-    }
+}
 }
 
 
